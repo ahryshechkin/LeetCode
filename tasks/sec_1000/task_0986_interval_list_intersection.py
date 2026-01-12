@@ -18,3 +18,6 @@ class Solution:
                 secondPtr += 1
 
         return result
+
+
+print((100000 + 30000 - 1) // 30000)
