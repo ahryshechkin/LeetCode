@@ -7,15 +7,15 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.heightChecker([1, 1, 4, 2, 1, 3])
-        self.assertEqual(3, r)
+        self.assertEqual(r, 3)
 
     def test02(self):
         r = self.s.heightChecker([5, 1, 2, 3, 4])
-        self.assertEqual(5, r)
+        self.assertEqual(r, 5)
 
     def test03(self):
         r = self.s.heightChecker([1, 2, 3, 4, 5])
-        self.assertEqual(0, r)
+        self.assertEqual(r, 0)
 
 
 if __name__ == '__main__':

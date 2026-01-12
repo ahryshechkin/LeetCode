@@ -7,15 +7,15 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.minSubArrayLen(7, [2, 3, 1, 2, 4, 3])
-        self.assertEqual(2, r)
+        self.assertEqual(r, 2)
 
     def test02(self):
         r = self.s.minSubArrayLen(4, [1, 4, 4])
-        self.assertEqual(1, r)
+        self.assertEqual(r, 1)
 
     def test03(self):
         r = self.s.minSubArrayLen(11, [1, 1, 1, 1, 1, 1, 1, 1])
-        self.assertEqual(0, r)
+        self.assertEqual(r, 0)
 
 
 if __name__ == '__main__':

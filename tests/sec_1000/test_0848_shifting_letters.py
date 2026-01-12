@@ -7,15 +7,15 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.shiftingLetters("abc", [3, 5, 9])
-        self.assertEqual("rpl", r)
+        self.assertEqual(r, "rpl")
 
     def test02(self):
         r = self.s.shiftingLetters("aaa", [1, 2, 3])
-        self.assertEqual("gfd", r)
+        self.assertEqual(r, "gfd")
 
     def test03(self):
         r = self.s.shiftingLetters("ruu", [26, 9, 17])
-        self.assertEqual("rul", r)
+        self.assertEqual(r, "rul")
 
 
 if __name__ == '__main__':

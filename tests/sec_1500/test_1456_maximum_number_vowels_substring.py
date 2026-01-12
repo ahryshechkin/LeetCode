@@ -7,15 +7,15 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.maxVowels("abciiidef", 3)
-        self.assertEqual(3, r)
+        self.assertEqual(r, 3)
 
     def test02(self):
         r = self.s.maxVowels("aeiou", 2)
-        self.assertEqual(2, r)
+        self.assertEqual(r, 2)
 
     def test03(self):
         r = self.s.maxVowels("leetcode", 3)
-        self.assertEqual(2, r)
+        self.assertEqual(r, 2)
 
 
 if __name__ == '__main__':

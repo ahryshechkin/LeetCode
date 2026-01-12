@@ -7,15 +7,15 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.findMaxAverage([1, 12, -5, -6, 50, 3], 4)
-        self.assertEqual(12.75, r)
+        self.assertEqual(r, 12.75)
 
     def test02(self):
         r = self.s.findMaxAverage([5], 1)
-        self.assertEqual(5.00, r)
+        self.assertEqual(r, 5.00)
 
     def test03(self):
         r = self.s.findMaxAverage([-1], 1)
-        self.assertEqual(-1.00, r)
+        self.assertEqual(r, -1.00)
 
 
 if __name__ == '__main__':

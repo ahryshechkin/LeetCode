@@ -7,15 +7,15 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.twoSum([2, 7, 11, 15], 9)
-        self.assertListEqual([0, 1], r)
+        self.assertListEqual(r, [0, 1])
 
     def test02(self):
         r = self.s.twoSum([3, 2, 4], 6)
-        self.assertListEqual([1, 2], r)
+        self.assertListEqual(r, [1, 2])
 
     def test03(self):
         r = self.s.twoSum([3, 3], 6)
-        self.assertListEqual([0, 1], r)
+        self.assertListEqual(r, [0, 1])
 
 
 if __name__ == '__main__':

@@ -7,15 +7,15 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.reverseWords("the sky is blue")
-        self.assertEqual("blue is sky the", r)
+        self.assertEqual(r, "blue is sky the")
 
     def test02(self):
         r = self.s.reverseWords("  hello world  ")
-        self.assertEqual("world hello", r)
+        self.assertEqual(r, "world hello")
 
     def test03(self):
         r = self.s.reverseWords("a good   example")
-        self.assertEqual("example good a", r)
+        self.assertEqual(r, "example good a")
 
 
 if __name__ == '__main__':

@@ -7,15 +7,15 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.runningSum([1, 2, 3, 4])
-        self.assertListEqual([1, 3, 6, 10], r)
+        self.assertListEqual(r, [1, 3, 6, 10])
 
     def test02(self):
         r = self.s.runningSum([1, 1, 1, 1, 1])
-        self.assertListEqual([1, 2, 3, 4, 5], r)
+        self.assertListEqual(r, [1, 2, 3, 4, 5])
 
     def test03(self):
         r = self.s.runningSum([3, 1, 2, 10, 1])
-        self.assertListEqual([3, 4, 6, 16, 17], r)
+        self.assertListEqual(r, [3, 4, 6, 16, 17])
 
 
 if __name__ == '__main__':

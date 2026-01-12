@@ -7,11 +7,11 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.findNumbers([12, 345, 2, 6, 7896])
-        self.assertEqual(2, r)
+        self.assertEqual(r, 2)
 
     def test02(self):
         r = self.s.findNumbers([555, 901, 482, 1771])
-        self.assertEqual(1, r)
+        self.assertEqual(r, 1)
 
 
 if __name__ == '__main__':

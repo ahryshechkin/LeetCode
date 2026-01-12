@@ -7,11 +7,11 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.characterReplacement("ABAB", 2)
-        self.assertEqual(4, r)
+        self.assertEqual(r, 4)
 
     def test02(self):
         r = self.s.characterReplacement("AABABBA", 1)
-        self.assertEqual(4, r)
+        self.assertEqual(r, 4)
 
 
 if __name__ == '__main__':

@@ -8,17 +8,17 @@ class TestSolution(TestCase):
     def test01(self):
         a = ["a", "a", "b", "b", "c", "c", "c"]
         k = self.s.compress(a)
-        self.assertListEqual(["a", "2", "b", "2", "c", "3"], a[:k])
+        self.assertListEqual(a[:k], ["a", "2", "b", "2", "c", "3"])
 
     def test02(self):
         a = ["a"]
         k = self.s.compress(a)
-        self.assertListEqual(["a"], a[:k])
+        self.assertListEqual(a[:k], ["a"])
 
     def test03(self):
         a = ["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
         k = self.s.compress(a)
-        self.assertListEqual(["a", "b", "1", "2"], a[:k])
+        self.assertListEqual(a[:k], ["a", "b", "1", "2"])
 
 
 if __name__ == '__main__':

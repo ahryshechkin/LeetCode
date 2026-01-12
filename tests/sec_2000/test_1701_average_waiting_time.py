@@ -7,11 +7,11 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.averageWaitingTime([[1, 2], [2, 5], [4, 3]])
-        self.assertEqual(5.0, r)
+        self.assertEqual(r, 5.0)
 
     def test02(self):
         r = self.s.averageWaitingTime([[5, 2], [5, 4], [10, 3], [20, 1]])
-        self.assertEqual(3.25, r)
+        self.assertEqual(r, 3.25)
 
 
 if __name__ == '__main__':

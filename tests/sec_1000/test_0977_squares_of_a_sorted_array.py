@@ -7,11 +7,11 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.sortedSquares([-4, -1, 0, 3, 10])
-        self.assertListEqual([0, 1, 9, 16, 100], r)
+        self.assertListEqual(r, [0, 1, 9, 16, 100])
 
     def test02(self):
         r = self.s.sortedSquares([-7, -3, 2, 3, 11])
-        self.assertListEqual([4, 9, 9, 49, 121], r)
+        self.assertListEqual(r, [4, 9, 9, 49, 121])
 
 
 if __name__ == '__main__':

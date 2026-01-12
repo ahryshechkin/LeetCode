@@ -7,11 +7,11 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.findAnagrams("cbaebabacd", "abc")
-        self.assertListEqual([0, 6], r)
+        self.assertListEqual(r, [0, 6])
 
     def test02(self):
         r = self.s.findAnagrams("abab", "ab")
-        self.assertListEqual([0, 1, 2], r)
+        self.assertListEqual(r, [0, 1, 2])
 
 
 if __name__ == '__main__':

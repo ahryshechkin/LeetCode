@@ -7,19 +7,19 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.lengthOfLongestSubstring("abcabcbb")
-        self.assertEqual(3, r)
+        self.assertEqual(r, 3)
 
     def test02(self):
         r = self.s.lengthOfLongestSubstring("bbbbb")
-        self.assertEqual(1, r)
+        self.assertEqual(r, 1)
 
     def test03(self):
         r = self.s.lengthOfLongestSubstring("pwwkew")
-        self.assertEqual(3, r)
+        self.assertEqual(r, 3)
 
     def test04(self):
         r = self.s.lengthOfLongestSubstring("au")
-        self.assertEqual(2, r)
+        self.assertEqual(r, 2)
 
 
 if __name__ == '__main__':

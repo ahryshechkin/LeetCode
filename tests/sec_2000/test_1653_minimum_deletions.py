@@ -7,11 +7,11 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.minimumDeletions("aababbab")
-        self.assertEqual(2, r)
+        self.assertEqual(r, 2)
 
     def test02(self):
         r = self.s.minimumDeletions("bbaaaaabb")
-        self.assertEqual(2, r)
+        self.assertEqual(r, 2)
 
 
 if __name__ == '__main__':

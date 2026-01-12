@@ -9,13 +9,13 @@ class TestSolution(TestCase):
         nums = [1, 1, 2]
         k = self.s.removeDuplicates(nums)
         self.assertEqual(2, k)
-        self.assertListEqual([1, 2, 2], nums)
+        self.assertListEqual(nums, [1, 2, 2])
 
     def test02(self):
         nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
         k = self.s.removeDuplicates(nums)
         self.assertEqual(5, k)
-        self.assertListEqual([0, 1, 2, 3, 4, 2, 2, 3, 3, 4], nums)
+        self.assertListEqual(nums, [0, 1, 2, 3, 4, 2, 2, 3, 3, 4])
 
 
 if __name__ == '__main__':

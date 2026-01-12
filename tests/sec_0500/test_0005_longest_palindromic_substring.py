@@ -7,11 +7,11 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.longestPalindrome("babad")
-        self.assertEqual("bab", r)
+        self.assertEqual(r, "bab")
 
     def test02(self):
         r = self.s.longestPalindrome("cbbd")
-        self.assertEqual("bb", r)
+        self.assertEqual(r, "bb")
 
 
 if __name__ == '__main__':

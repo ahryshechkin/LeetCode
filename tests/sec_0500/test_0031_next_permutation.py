@@ -8,27 +8,27 @@ class TestSolution(TestCase):
     def test01(self):
         nums = [1, 2, 3]
         self.s.nextPermutation(nums)
-        self.assertListEqual([1, 3, 2], nums)
+        self.assertListEqual(nums, [1, 3, 2])
 
     def test02(self):
         nums = [3, 2, 1]
         self.s.nextPermutation(nums)
-        self.assertListEqual([1, 2, 3], nums)
+        self.assertListEqual(nums, [1, 2, 3])
 
     def test03(self):
         nums = [1, 1, 5]
         self.s.nextPermutation(nums)
-        self.assertListEqual([1, 5, 1], nums)
+        self.assertListEqual(nums, [1, 5, 1])
 
     def test04(self):
         nums = [1, 3, 2]
         self.s.nextPermutation(nums)
-        self.assertListEqual([2, 1, 3], nums)
+        self.assertListEqual(nums, [2, 1, 3])
 
     def test05(self):
         nums = [1, 1]
         self.s.nextPermutation(nums)
-        self.assertListEqual([1, 1], nums)
+        self.assertListEqual(nums, [1, 1])
 
 
 if __name__ == '__main__':

@@ -7,11 +7,11 @@ class TestSolution(TestCase):
 
     def test01(self):
         r = self.s.intersection([1, 2, 2, 1], [2, 2])
-        self.assertListEqual([2], r)
+        self.assertListEqual(r, [2])
 
     def test02(self):
         r = self.s.intersection([4, 9, 5], [9, 4, 9, 8, 4])
-        self.assertListEqual([9, 4], r)
+        self.assertListEqual(r, [9, 4])
 
 
 if __name__ == '__main__':
