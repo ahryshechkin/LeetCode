@@ -6,9 +6,21 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+        arr = ["eat", "tea", "tan", "ate", "nat", "bat"]
         r = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
-        self.assertListEqual(r, self.s.groupAnagrams(strs))
+        self.assertListEqual(self.s.groupAnagrams(arr), r)
+
+
+    def test02(self):
+        arr = [""]
+        r = [[""]]
+        self.assertListEqual(self.s.groupAnagrams(arr), r)
+
+
+    def test03(self):
+        arr = ["a"]
+        r = [["a"]]
+        self.assertListEqual(self.s.groupAnagrams(arr), r)
 
 
 if __name__ == '__main__':
