@@ -21,7 +21,7 @@ class TestSolution(TestCase):
         h23 = ListNode(3, h24)
         h21 = ListNode(1, h23)
 
-        r = list()
+        actual = list()
         head = self.s.mergeTwoLists(h11, h21)
         while head:
             r.append(head.val)
@@ -30,7 +30,7 @@ class TestSolution(TestCase):
 
 
     def test02(self):
-        r = list()
+        actual = list()
         head = self.s.mergeTwoLists([], [])
         while head:
             r.append(head.val)
@@ -39,7 +39,7 @@ class TestSolution(TestCase):
 
 
     def test03(self):
-        r = list()
+        actual = list()
         head = self.s.mergeTwoLists([], ListNode())
         while head:
             r.append(head.val)

@@ -6,11 +6,11 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        r = self.s.minimumDeletions("aababbab")
+        actual = self.s.minimumDeletions("aababbab")
         self.assertEqual(r, 2)
 
     def test02(self):
-        r = self.s.minimumDeletions("bbaaaaabb")
+        actual = self.s.minimumDeletions("bbaaaaabb")
         self.assertEqual(r, 2)
 
 

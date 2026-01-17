@@ -6,15 +6,15 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        r = self.s.maximumWealth([[1, 2, 3], [3, 2, 1]])
+        actual = self.s.maximumWealth([[1, 2, 3], [3, 2, 1]])
         self.assertEqual(r, 6)
 
     def test02(self):
-        r = self.s.maximumWealth([[1, 5], [7, 3], [3, 5]])
+        actual = self.s.maximumWealth([[1, 5], [7, 3], [3, 5]])
         self.assertEqual(r, 10)
 
     def test03(self):
-        r = self.s.maximumWealth([[2, 8, 7], [7, 1, 3], [1, 9, 5]])
+        actual = self.s.maximumWealth([[2, 8, 7], [7, 1, 3], [1, 9, 5]])
         self.assertEqual(r, 17)
 
 

@@ -5,20 +5,28 @@ from tasks.sec_1000.task_0905_sort_array_by_parity import Solution
 class TestSolution(TestCase):
     s = Solution()
 
+
     def test01(self):
-        nums = [3, 1, 2, 4]
-        self.s.sortArrayByParity(nums)
-        self.assertListEqual([2, 4, 3, 1], nums)
+        given = [3, 1, 2, 4]
+        expected = [2, 4, 3, 1]
+
+        self.s.sortArrayByParity(given)
+        self.assertListEqual(given, expected)
+
 
     def test02(self):
-        nums = [0]
-        self.s.sortArrayByParity(nums)
-        self.assertListEqual([0], nums)
+        given = [0]
+        expected = [0]
+
+        self.s.sortArrayByParity(given)
+        self.assertListEqual(given, expected)
+
 
     def test03(self):
-        nums = [3, 1]
-        self.s.sortArrayByParity(nums)
-        self.assertListEqual([3, 1], nums)
+        given = [3, 1]
+        expected = [3, 1]
+        self.s.sortArrayByParity(given)
+        self.assertListEqual(given, expected)
 
 
 if __name__ == '__main__':

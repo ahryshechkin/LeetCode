@@ -19,38 +19,44 @@ class TestSolution(TestCase):
         head.next.next.next = ListNode(4)
         head.next.next.next.next = ListNode(5)
 
-        r = list()
-        cur = self.s.reverseList(head)
-        while cur:
-            r.append(cur.val)
-            cur = cur.next
+        expected = [5, 4, 3, 2, 1]
+        actual = list()
 
-        self.assertListEqual(r, [5, 4, 3, 2, 1])
+        cuactual = self.s.reverseList(head)
+        while cur:
+            actual.append(cur.val)
+            cuactual = cur.next
+
+        self.assertListEqual(actual, expected)
 
 
     def test02(self):
         head = ListNode(1)
         head.next = ListNode(2)
 
-        r = list()
-        cur = self.s.reverseList(head)
-        while cur:
-            r.append(cur.val)
-            cur = cur.next
+        expected = [2, 1]
+        actual = list()
 
-        self.assertListEqual(r, [2, 1])
+        cuactual = self.s.reverseList(head)
+        while cur:
+            actual.append(cur.val)
+            cuactual = cur.next
+
+        self.assertListEqual(actual, expected)
 
 
     def test03(self):
         head = None
 
-        r = list()
-        cur = self.s.reverseList(head)
-        while cur:
-            r.append(cur.val)
-            cur = cur.next
+        expected = []
+        actual = list()
 
-        self.assertListEqual(r, [])
+        cuactual = self.s.reverseList(head)
+        while cur:
+            actual.append(cur.val)
+            cuactual = cur.next
+
+        self.assertListEqual(actual, expected)
 
 
 if __name__ == '__main__':

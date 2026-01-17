@@ -5,30 +5,40 @@ from tasks.sec_0500.task_0031_next_permutation import Solution
 class TestSolution(TestCase):
     s = Solution()
 
+
     def test01(self):
-        nums = [1, 2, 3]
-        self.s.nextPermutation(nums)
-        self.assertListEqual(nums, [1, 3, 2])
+        given = [1, 2, 3]
+
+        self.s.nextPermutation(given)
+        self.assertListEqual(given, [1, 3, 2])
+
 
     def test02(self):
-        nums = [3, 2, 1]
-        self.s.nextPermutation(nums)
-        self.assertListEqual(nums, [1, 2, 3])
+        given = [3, 2, 1]
+
+        self.s.nextPermutation(given)
+        self.assertListEqual(given, [1, 2, 3])
+
 
     def test03(self):
-        nums = [1, 1, 5]
-        self.s.nextPermutation(nums)
-        self.assertListEqual(nums, [1, 5, 1])
+        given = [1, 1, 5]
+
+        self.s.nextPermutation(given)
+        self.assertListEqual(given, [1, 5, 1])
+
 
     def test04(self):
-        nums = [1, 3, 2]
-        self.s.nextPermutation(nums)
-        self.assertListEqual(nums, [2, 1, 3])
+        given = [1, 3, 2]
+
+        self.s.nextPermutation(given)
+        self.assertListEqual(given, [2, 1, 3])
+
 
     def test05(self):
-        nums = [1, 1]
-        self.s.nextPermutation(nums)
-        self.assertListEqual(nums, [1, 1])
+        given = [1, 1]
+
+        self.s.nextPermutation(given)
+        self.assertListEqual(given, [1, 1])
 
 
 if __name__ == '__main__':

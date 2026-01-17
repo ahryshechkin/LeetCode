@@ -6,11 +6,11 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        r = self.s.averageWaitingTime([[1, 2], [2, 5], [4, 3]])
+        actual = self.s.averageWaitingTime([[1, 2], [2, 5], [4, 3]])
         self.assertEqual(r, 5.0)
 
     def test02(self):
-        r = self.s.averageWaitingTime([[5, 2], [5, 4], [10, 3], [20, 1]])
+        actual = self.s.averageWaitingTime([[5, 2], [5, 4], [10, 3], [20, 1]])
         self.assertEqual(r, 3.25)
 
 

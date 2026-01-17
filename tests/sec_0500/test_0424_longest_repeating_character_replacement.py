@@ -5,12 +5,14 @@ from tasks.sec_0500.task_0424_longest_repeating_character_replacement import Sol
 class TestSolution(TestCase):
     s = Solution()
 
+
     def test01(self):
-        r = self.s.characterReplacement("ABAB", 2)
+        actual = self.s.characterReplacement("ABAB", 2)
         self.assertEqual(r, 4)
 
+
     def test02(self):
-        r = self.s.characterReplacement("AABABBA", 1)
+        actual = self.s.characterReplacement("AABABBA", 1)
         self.assertEqual(r, 4)
 
 

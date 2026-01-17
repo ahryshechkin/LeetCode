@@ -6,15 +6,15 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        r = self.s.maxVowels("abciiidef", 3)
+        actual = self.s.maxVowels("abciiidef", 3)
         self.assertEqual(r, 3)
 
     def test02(self):
-        r = self.s.maxVowels("aeiou", 2)
+        actual = self.s.maxVowels("aeiou", 2)
         self.assertEqual(r, 2)
 
     def test03(self):
-        r = self.s.maxVowels("leetcode", 3)
+        actual = self.s.maxVowels("leetcode", 3)
         self.assertEqual(r, 2)
 
 

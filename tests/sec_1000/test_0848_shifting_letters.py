@@ -5,17 +5,20 @@ from tasks.sec_1000.task_0848_shifting_letters import Solution
 class TestSolution(TestCase):
     s = Solution()
 
+
     def test01(self):
-        r = self.s.shiftingLetters("abc", [3, 5, 9])
-        self.assertEqual(r, "rpl")
+        actual = self.s.shiftingLetters("abc", [3, 5, 9])
+        self.assertEqual(actual, "rpl")
+
 
     def test02(self):
-        r = self.s.shiftingLetters("aaa", [1, 2, 3])
-        self.assertEqual(r, "gfd")
+        actual = self.s.shiftingLetters("aaa", [1, 2, 3])
+        self.assertEqual(actual, "gfd")
+
 
     def test03(self):
-        r = self.s.shiftingLetters("ruu", [26, 9, 17])
-        self.assertEqual(r, "rul")
+        actual = self.s.shiftingLetters("ruu", [26, 9, 17])
+        self.assertEqual(actual, "rul")
 
 
 if __name__ == '__main__':

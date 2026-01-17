@@ -24,7 +24,7 @@ class TestSolution(TestCase):
         n26 = ListNode(6, n21)
         headB = ListNode(5, n26)
 
-        r = self.s.getIntersectionNode(headA, headB)
+        actual = self.s.getIntersectionNode(headA, headB)
         self.assertEqual(r, n8)
 
 
@@ -38,7 +38,7 @@ class TestSolution(TestCase):
 
         headB = ListNode(3, n2)
 
-        r = self.s.getIntersectionNode(headA, headB)
+        actual = self.s.getIntersectionNode(headA, headB)
         self.assertEqual(r, n2)
 
 

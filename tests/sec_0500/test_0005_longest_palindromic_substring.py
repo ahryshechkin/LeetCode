@@ -5,12 +5,14 @@ from tasks.sec_0500.task_0005_longest_palindromic_substring import Solution
 class TestSolution(TestCase):
     s = Solution()
 
+
     def test01(self):
-        r = self.s.longestPalindrome("babad")
+        actual = self.s.longestPalindrome("babad")
         self.assertEqual(r, "bab")
 
+
     def test02(self):
-        r = self.s.longestPalindrome("cbbd")
+        actual = self.s.longestPalindrome("cbbd")
         self.assertEqual(r, "bb")
 
 

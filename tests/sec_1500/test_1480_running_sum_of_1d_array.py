@@ -6,15 +6,15 @@ class TestSolution(TestCase):
     s = Solution()
 
     def test01(self):
-        r = self.s.runningSum([1, 2, 3, 4])
+        actual = self.s.runningSum([1, 2, 3, 4])
         self.assertListEqual(r, [1, 3, 6, 10])
 
     def test02(self):
-        r = self.s.runningSum([1, 1, 1, 1, 1])
+        actual = self.s.runningSum([1, 1, 1, 1, 1])
         self.assertListEqual(r, [1, 2, 3, 4, 5])
 
     def test03(self):
-        r = self.s.runningSum([3, 1, 2, 10, 1])
+        actual = self.s.runningSum([3, 1, 2, 10, 1])
         self.assertListEqual(r, [3, 4, 6, 16, 17])
 
 

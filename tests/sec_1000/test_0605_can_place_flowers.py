@@ -5,21 +5,25 @@ from tasks.sec_1000.task_0605_can_place_flowers import Solution
 class TestSolution(TestCase):
     s = Solution()
 
+
     def test01(self):
-        r = self.s.canPlaceFlowers([1, 0, 0, 0, 1], 1)
-        self.assertTrue(r)
+        actual = self.s.canPlaceFlowers([1, 0, 0, 0, 1], 1)
+        self.assertTrue(actual)
+
 
     def test02(self):
-        r = self.s.canPlaceFlowers([1, 0, 0, 0, 1], 2)
-        self.assertFalse(r)
+        actual = self.s.canPlaceFlowers([1, 0, 0, 0, 1], 2)
+        self.assertFalse(actual)
+
 
     def test03(self):
-        r = self.s.canPlaceFlowers([1, 0, 0, 0, 0, 0, 1], 2)
-        self.assertTrue(r)
+        actual = self.s.canPlaceFlowers([1, 0, 0, 0, 0, 0, 1], 2)
+        self.assertTrue(actual)
+
 
     def test04(self):
-        r = self.s.canPlaceFlowers([1], 0)
-        self.assertTrue(r)
+        actual = self.s.canPlaceFlowers([1], 0)
+        self.assertTrue(actual)
 
 
 if __name__ == '__main__':

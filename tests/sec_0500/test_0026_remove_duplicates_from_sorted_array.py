@@ -5,17 +5,25 @@ from tasks.sec_0500.task_0026_remove_duplicates_from_sorted_array import Solutio
 class TestSolution(TestCase):
     s = Solution()
 
+
     def test01(self):
-        nums = [1, 1, 2]
-        k = self.s.removeDuplicates(nums)
-        self.assertEqual(2, k)
-        self.assertListEqual(nums, [1, 2, 2])
+        given = [1, 1, 2]
+        expected = [1, 2, 2]
+
+        actual = self.s.removeDuplicates(given)
+
+        self.assertEqual(r, 2)
+        self.assertListEqual(given, expected)
+
 
     def test02(self):
-        nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
-        k = self.s.removeDuplicates(nums)
-        self.assertEqual(5, k)
-        self.assertListEqual(nums, [0, 1, 2, 3, 4, 2, 2, 3, 3, 4])
+        given = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+        expected = [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
+
+        actual = self.s.removeDuplicates(given)
+
+        self.assertEqual(r, 5)
+        self.assertListEqual(given, expected)
 
 
 if __name__ == '__main__':
