@@ -9,7 +9,6 @@ class TestSolution(TestCase):
     def test01(self):
         given = [3, 2, 2, 3]
         expected = [2, 2, 3, 3]
-
         actual = self.s.removeElement(given, 3)
 
         self.assertEqual(actual, 2)
@@ -19,7 +18,6 @@ class TestSolution(TestCase):
     def test02(self):
         given = [0, 1, 2, 2, 3, 0, 4, 2]
         expected = [0, 1, 4, 0, 3, 2, 2, 2]
-
         actual = self.s.removeElement(given, 2)
 
         self.assertEqual(actual, 5)
