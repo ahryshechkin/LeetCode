@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def fizzBuzz(self, n: int) -> list[str]:
+    def fizzBuzz(self, n: int) -> List[str]:
         result = list()
 
         for i in range(1, n + 1):

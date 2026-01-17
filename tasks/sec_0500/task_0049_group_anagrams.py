@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         groups = dict()
 
         for line in strs:

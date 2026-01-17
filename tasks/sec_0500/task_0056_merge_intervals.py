@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def merge(self, intervals: list[List[int]]) -> list[List[int]]:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         intervals.sort(key=lambda x: x[0])
         mergedIntervals = [intervals[0]]
 

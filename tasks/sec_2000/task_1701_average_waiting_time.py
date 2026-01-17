@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def averageWaitingTime(self, customers: list[List[int]]) -> float:
+    def averageWaitingTime(self, customers: List[List[int]]) -> float:
         currentTime = 0
         totalWaitingTime = 0
 

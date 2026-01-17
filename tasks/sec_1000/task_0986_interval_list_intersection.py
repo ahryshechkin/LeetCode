@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def intervalIntersection(self, firstList: list[List[int]], secondList: list[List[int]]) -> list[List[int]]:
+    def intervalIntersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
         firstPtr, secondPtr = 0, 0
         result = list()
 

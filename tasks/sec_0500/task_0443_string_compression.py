@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def compress(self, chars: list[str]) -> int:
+    def compress(self, chars: List[str]) -> int:
         left, right = 0, 0
         size = len(chars)
 
