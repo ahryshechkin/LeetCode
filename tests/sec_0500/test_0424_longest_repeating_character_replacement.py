@@ -8,12 +8,12 @@ class TestSolution(TestCase):
 
     def test01(self):
         actual = self.s.characterReplacement("ABAB", 2)
-        self.assertEqual(r, 4)
+        self.assertEqual(actual, 4)
 
 
     def test02(self):
         actual = self.s.characterReplacement("AABABBA", 1)
-        self.assertEqual(r, 4)
+        self.assertEqual(actual, 4)
 
 
 if __name__ == '__main__':

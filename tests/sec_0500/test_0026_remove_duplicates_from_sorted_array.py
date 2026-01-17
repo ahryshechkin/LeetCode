@@ -12,7 +12,7 @@ class TestSolution(TestCase):
 
         actual = self.s.removeDuplicates(given)
 
-        self.assertEqual(r, 2)
+        self.assertEqual(actual, 2)
         self.assertListEqual(given, expected)
 
 
@@ -22,7 +22,7 @@ class TestSolution(TestCase):
 
         actual = self.s.removeDuplicates(given)
 
-        self.assertEqual(r, 5)
+        self.assertEqual(actual, 5)
         self.assertListEqual(given, expected)
 
 

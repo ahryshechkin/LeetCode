@@ -8,22 +8,22 @@ class TestSolution(TestCase):
 
     def test01(self):
         actual = self.s.lengthOfLongestSubstring("abcabcbb")
-        self.assertEqual(r, 3)
+        self.assertEqual(actual, 3)
 
 
     def test02(self):
         actual = self.s.lengthOfLongestSubstring("bbbbb")
-        self.assertEqual(r, 1)
+        self.assertEqual(actual, 1)
 
 
     def test03(self):
         actual = self.s.lengthOfLongestSubstring("pwwkew")
-        self.assertEqual(r, 3)
+        self.assertEqual(actual, 3)
 
 
     def test04(self):
         actual = self.s.lengthOfLongestSubstring("au")
-        self.assertEqual(r, 2)
+        self.assertEqual(actual, 2)
 
 
 if __name__ == '__main__':

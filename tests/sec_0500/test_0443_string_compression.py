@@ -26,6 +26,7 @@ class TestSolution(TestCase):
         given = ["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
         expected = ["a", "b", "1", "2"]
         k = self.s.compress(given)
+
         self.assertListEqual(given[:k], expected)
 
 

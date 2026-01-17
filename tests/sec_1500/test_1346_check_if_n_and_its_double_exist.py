@@ -5,14 +5,20 @@ from tasks.sec_1500.task_1346_check_if_n_and_its_double_exist import Solution
 class TestSolution(TestCase):
     s = Solution()
 
+
     def test01(self):
-        self.assertTrue(self.s.checkIfExist([10, 2, 5, 3]))
+        given = [10, 2, 5, 3]
+        self.assertTrue(self.s.checkIfExist(given))
+
 
     def test02(self):
-        self.assertFalse(self.s.checkIfExist([3, 1, 7, 11]))
+        given = [3, 1, 7, 11]
+        self.assertFalse(self.s.checkIfExist(given))
+
 
     def test03(self):
-        self.assertTrue(self.s.checkIfExist([7, 1, 14, 11]))
+        given = [7, 1, 14, 11]
+        self.assertTrue(self.s.checkIfExist(given))
 
 
 if __name__ == '__main__':

@@ -7,18 +7,24 @@ class TestSolution(TestCase):
 
 
     def test01(self):
+        expected = "rpl"
         actual = self.s.shiftingLetters("abc", [3, 5, 9])
-        self.assertEqual(actual, "rpl")
+
+        self.assertEqual(actual, expected)
 
 
     def test02(self):
+        expected = "gfd"
         actual = self.s.shiftingLetters("aaa", [1, 2, 3])
-        self.assertEqual(actual, "gfd")
+
+        self.assertEqual(actual, expected)
 
 
     def test03(self):
+        expected = "rul"
         actual = self.s.shiftingLetters("ruu", [26, 9, 17])
-        self.assertEqual(actual, "rul")
+
+        self.assertEqual(actual, expected)
 
 
 if __name__ == '__main__':

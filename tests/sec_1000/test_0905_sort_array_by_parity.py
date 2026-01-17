@@ -25,6 +25,7 @@ class TestSolution(TestCase):
     def test03(self):
         given = [3, 1]
         expected = [3, 1]
+
         self.s.sortArrayByParity(given)
         self.assertListEqual(given, expected)
 

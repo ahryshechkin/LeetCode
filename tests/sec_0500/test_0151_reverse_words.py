@@ -7,18 +7,27 @@ class TestSolution(TestCase):
 
 
     def test01(self):
-        actual = self.s.reverseWords("the sky is blue")
-        self.assertEqual(r, "blue is sky the")
+        given = "the sky is blue"
+        expected = "blue is sky the"
+        actual = self.s.reverseWords(given)
+
+        self.assertEqual(actual, expected)
 
 
     def test02(self):
-        actual = self.s.reverseWords("  hello world  ")
-        self.assertEqual(r, "world hello")
+        given = "  hello world  "
+        expected = "world hello"
+        actual = self.s.reverseWords(given)
+
+        self.assertEqual(actual, expected)
 
 
     def test03(self):
-        actual = self.s.reverseWords("a good   example")
-        self.assertEqual(r, "example good a")
+        given = "a good   example"
+        expected = "example good a"
+        actual = self.s.reverseWords(given)
+
+        self.assertEqual(actual, expected)
 
 
 if __name__ == '__main__':

@@ -9,7 +9,6 @@ class TestSolution(TestCase):
     def test01(self):
         intervals = [[1, 3], [2, 6], [8, 10], [15, 18]]
         expected = [[1, 6], [8, 10], [15, 18]]
-
         actual = self.s.merge(intervals)
 
         self.assertEqual(actual, expected)
@@ -18,7 +17,6 @@ class TestSolution(TestCase):
     def test02(self):
         intervals = [[1, 4], [4, 5]]
         expected = [[1, 5]]
-
         actual = self.s.merge(intervals)
 
         self.assertListEqual(actual, expected)
@@ -27,7 +25,6 @@ class TestSolution(TestCase):
     def test03(self):
         intervals = [[1, 4], [0, 4]]
         expected = [[0, 4]]
-
         actual = self.s.merge(intervals)
 
         self.assertListEqual(actual, expected)

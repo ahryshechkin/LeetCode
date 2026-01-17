@@ -9,22 +9,25 @@ class TestSolution(TestCase):
     def test01(self):
         given = ["eat", "tea", "tan", "ate", "nat", "bat"]
         expected = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
+        actual = self.s.groupAnagrams(given)
 
-        self.assertListEqual(self.s.groupAnagrams(given), expected)
+        self.assertListEqual(actual, expected)
 
 
     def test02(self):
         given = [""]
         expected = [[""]]
+        actual = self.s.groupAnagrams(given)
 
-        self.assertListEqual(self.s.groupAnagrams(given), expected)
+        self.assertListEqual(actual, expected)
 
 
     def test03(self):
         given = ["a"]
         expected = [["a"]]
+        actual = self.s.groupAnagrams(given)
 
-        self.assertListEqual(self.s.groupAnagrams(given), expected)
+        self.assertListEqual(actual, expected)
 
 
 if __name__ == '__main__':

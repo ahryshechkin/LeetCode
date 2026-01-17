@@ -21,27 +21,33 @@ class TestSolution(TestCase):
         h23 = ListNode(3, h24)
         h21 = ListNode(1, h23)
 
+        expected = [1, 1, 2, 3, 4, 4]
         actual = list()
         head = self.s.mergeTwoLists(h11, h21)
         while head:
-            r.append(head.val)
+            actual.append(head.val)
             head = head.next
-        self.assertListEqual(r, [1, 1, 2, 3, 4, 4])
+
+        self.assertListEqual(actual, expected)
 
 
     def test02(self):
+        expected = []
         actual = list()
         head = self.s.mergeTwoLists([], [])
         while head:
-            r.append(head.val)
+            actual.append(head.val)
             head = head.next
-        self.assertListEqual(r, [])
+
+        self.assertListEqual(actual, expected)
 
 
     def test03(self):
+        expected = [0]
         actual = list()
         head = self.s.mergeTwoLists([], ListNode())
         while head:
-            r.append(head.val)
+            actual.append(head.val)
             head = head.next
-        self.assertListEqual(r, [0])
+
+        self.assertListEqual(actual, expected)

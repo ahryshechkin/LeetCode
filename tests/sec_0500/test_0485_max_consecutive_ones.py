@@ -9,12 +9,14 @@ class TestSolution(TestCase):
     def test01(self):
         given = [1, 1, 0, 1, 1, 1]
         actual = self.s.findMaxConsecutiveOnes(given)
+
         self.assertEqual(actual, 3)
 
 
     def test02(self):
         given = [1, 0, 1, 1, 0, 1]
         actual = self.s.findMaxConsecutiveOnes(given)
+
         self.assertEqual(actual, 2)
 
 

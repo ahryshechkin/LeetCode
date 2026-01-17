@@ -7,15 +7,18 @@ class TestSolution(TestCase):
 
 
     def test01(self):
-        self.assertEqual(self.s.thirdMax([3, 2, 1]), 1)
+        given = [3, 2, 1]
+        self.assertEqual(self.s.thirdMax(given), 1)
 
 
     def test02(self):
-        self.assertEqual(self.s.thirdMax([1, 2]), 2)
+        given = [1, 2]
+        self.assertEqual(self.s.thirdMax(given), 2)
 
 
     def test03(self):
-        self.assertEqual(self.s.thirdMax([2, 2, 3, 1]), 1)
+        given = [2, 2, 3, 1]
+        self.assertEqual(self.s.thirdMax(given), 1)
 
 
 if __name__ == '__main__':

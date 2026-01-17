@@ -8,12 +8,12 @@ class TestSolution(TestCase):
 
     def test01(self):
         actual = self.s.longestPalindrome("babad")
-        self.assertEqual(r, "bab")
+        self.assertEqual(actual, "bab")
 
 
     def test02(self):
         actual = self.s.longestPalindrome("cbbd")
-        self.assertEqual(r, "bb")
+        self.assertEqual(actual, "bb")
 
 
 if __name__ == '__main__':

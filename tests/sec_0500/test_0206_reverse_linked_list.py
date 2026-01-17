@@ -21,11 +21,10 @@ class TestSolution(TestCase):
 
         expected = [5, 4, 3, 2, 1]
         actual = list()
-
-        cuactual = self.s.reverseList(head)
+        cur = self.s.reverseList(head)
         while cur:
             actual.append(cur.val)
-            cuactual = cur.next
+            cur = cur.next
 
         self.assertListEqual(actual, expected)
 
@@ -36,11 +35,10 @@ class TestSolution(TestCase):
 
         expected = [2, 1]
         actual = list()
-
-        cuactual = self.s.reverseList(head)
+        cur = self.s.reverseList(head)
         while cur:
             actual.append(cur.val)
-            cuactual = cur.next
+            cur = cur.next
 
         self.assertListEqual(actual, expected)
 
@@ -50,11 +48,10 @@ class TestSolution(TestCase):
 
         expected = []
         actual = list()
-
-        cuactual = self.s.reverseList(head)
+        cur = self.s.reverseList(head)
         while cur:
             actual.append(cur.val)
-            cuactual = cur.next
+            cur = cur.next
 
         self.assertListEqual(actual, expected)
 

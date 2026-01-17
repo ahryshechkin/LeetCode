@@ -7,18 +7,18 @@ class TestSolution(TestCase):
 
 
     def test01(self):
-        prices = [7, 1, 5, 3, 6, 4]
-        self.assertEqual(self.s.maxProfit(prices), 7)
+        given = [7, 1, 5, 3, 6, 4]
+        self.assertEqual(self.s.maxProfit(given), 7)
 
 
     def test02(self):
-        prices = [1, 2, 3, 4, 5]
-        self.assertEqual(self.s.maxProfit(prices), 4)
+        given = [1, 2, 3, 4, 5]
+        self.assertEqual(self.s.maxProfit(given), 4)
 
 
     def test03(self):
-        prices = [7, 6, 4, 3, 1]
-        self.assertEqual(self.s.maxProfit(prices), 0)
+        given = [7, 6, 4, 3, 1]
+        self.assertEqual(self.s.maxProfit(given), 0)
 
 
 if __name__ == '__main__':

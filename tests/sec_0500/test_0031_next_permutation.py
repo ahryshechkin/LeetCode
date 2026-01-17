@@ -8,37 +8,42 @@ class TestSolution(TestCase):
 
     def test01(self):
         given = [1, 2, 3]
+        expected = [1, 3, 2]
 
         self.s.nextPermutation(given)
-        self.assertListEqual(given, [1, 3, 2])
+        self.assertListEqual(given, expected)
 
 
     def test02(self):
         given = [3, 2, 1]
+        expected = [1, 2, 3]
 
         self.s.nextPermutation(given)
-        self.assertListEqual(given, [1, 2, 3])
+        self.assertListEqual(given, expected)
 
 
     def test03(self):
         given = [1, 1, 5]
+        expected = [1, 5, 1]
 
         self.s.nextPermutation(given)
-        self.assertListEqual(given, [1, 5, 1])
+        self.assertListEqual(given, expected)
 
 
     def test04(self):
         given = [1, 3, 2]
+        expected = [2, 1, 3]
 
         self.s.nextPermutation(given)
-        self.assertListEqual(given, [2, 1, 3])
+        self.assertListEqual(given, expected)
 
 
     def test05(self):
         given = [1, 1]
+        expected = [1, 1]
 
         self.s.nextPermutation(given)
-        self.assertListEqual(given, [1, 1])
+        self.assertListEqual(given, expected)
 
 
 if __name__ == '__main__':

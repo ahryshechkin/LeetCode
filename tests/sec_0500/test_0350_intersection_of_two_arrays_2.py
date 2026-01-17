@@ -9,12 +9,14 @@ class TestSolution(TestCase):
     def test01(self):
         expected = [2, 2]
         actual = self.s.intersect([1, 2, 2, 1], [2, 2])
+
         self.assertListEqual(actual, expected)
 
 
     def test02(self):
         expected = [4, 9]
         actual = self.s.intersect([4, 9, 5], [9, 4, 9, 8, 4])
+
         self.assertListEqual(actual, expected)
 
 

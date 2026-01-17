@@ -8,14 +8,18 @@ class TestSolution(TestCase):
 
     def test01(self):
         given = [4, 3, 2, 7, 8, 2, 3, 1]
+        expected = [5, 6]
         actual = self.s.findDisappearedNumbers(given)
-        self.assertListEqual(actual, [5, 6])
+
+        self.assertListEqual(actual, expected)
 
 
     def test02(self):
         given = [1, 1]
+        expected = [2]
         actual = self.s.findDisappearedNumbers(given)
-        self.assertListEqual(actual, [2])
+
+        self.assertListEqual(actual, expected)
 
 
 if __name__ == '__main__':
