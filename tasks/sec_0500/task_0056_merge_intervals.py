@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def merge(self, intervals: list[list[int]]) -> list[list[int]]:
+    def merge(self, intervals: list[List[int]]) -> list[List[int]]:
         intervals.sort(key=lambda x: x[0])
         mergedIntervals = [intervals[0]]
 

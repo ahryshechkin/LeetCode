@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def intervalIntersection(self, firstList: list[list[int]], secondList: list[list[int]]) -> list[list[int]]:
+    def intervalIntersection(self, firstList: list[List[int]], secondList: list[List[int]]) -> list[List[int]]:
         firstPtr, secondPtr = 0, 0
         result = list()
 

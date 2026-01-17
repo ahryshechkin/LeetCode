@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def averageWaitingTime(self, customers: list[list[int]]) -> float:
+    def averageWaitingTime(self, customers: list[List[int]]) -> float:
         currentTime = 0
         totalWaitingTime = 0
 

@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def maxArea(self, height: list[int]) -> int:
+    def maxArea(self, height: List[int]) -> int:
         left, right = 0, len(height) - 1
         maxArea = 0
 

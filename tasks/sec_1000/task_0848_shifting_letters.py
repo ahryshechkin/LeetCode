@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def shiftingLetters(self, s: str, shifts: list[int]) -> str:
+    def shiftingLetters(self, s: str, shifts: List[int]) -> str:
         totalShift = 0
         result = [""] * len(s)
 

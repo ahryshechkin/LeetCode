@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def intersect(self, nums1: list[int], nums2: list[int]) -> list[int]:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         result = list()
 
         for i in range(len(nums1)):

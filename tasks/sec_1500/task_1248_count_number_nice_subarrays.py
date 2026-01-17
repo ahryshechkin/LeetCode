@@ -1,13 +1,16 @@
+from typing import List
+
+
 class Solution:
-    def numberOfSubarrays(self, nums: list[int], k: int) -> int:
+    def numberOfSubarrays(self, nums: List[int], k: int) -> int:
         result = 0
-        prefix_count = {0: 1}
-        prefix_sum = 0
+        prefixCount = {0: 1}
+        prefixSum = 0
 
         for num in nums:
             if num % 2 == 1:
-                prefix_sum += 1
-            result += prefix_count.get(prefix_sum - k, 0)
-            prefix_count[prefix_sum] = prefix_count.get(prefix_sum, 0) + 1
+                prefixSum += 1
+            result += prefixCount.get(prefixSum - k, 0)
+            prefixCount[prefixSum] = prefixCount.get(prefixSum, 0) + 1
 
         return result

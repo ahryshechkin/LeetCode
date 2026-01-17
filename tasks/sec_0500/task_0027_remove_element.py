@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def removeElement(self, nums: list[int], val: int) -> int:
+    def removeElement(self, nums: List[int], val: int) -> int:
         start = 0
         end = len(nums) - 1
 

@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def findDisappearedNumbers(self, nums: list[int]) -> list[int]:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         disappearedNums = list()
         distinctNums = set(nums)
 

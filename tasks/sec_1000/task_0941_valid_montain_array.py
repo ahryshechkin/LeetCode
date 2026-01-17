@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def validMountainArray(self, arr: list[int]) -> bool:
+    def validMountainArray(self, arr: List[int]) -> bool:
         flag = True
 
         if len(arr) == 1 or arr[0] > arr[1]:

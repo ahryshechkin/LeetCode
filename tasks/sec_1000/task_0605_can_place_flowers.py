@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def canPlaceFlowers(self, flowerbed: list[int], n: int) -> bool:
+    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         cnt = 0
         if len(flowerbed) == 1:
             possible = self.canPlaceFlower(0, flowerbed[0], 0)

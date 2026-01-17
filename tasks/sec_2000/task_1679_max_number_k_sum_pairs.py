@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def maxOperations(self, nums: list[int], k: int) -> int:
+    def maxOperations(self, nums: List[int], k: int) -> int:
         pairCnt = 0
         pairs = dict()
 

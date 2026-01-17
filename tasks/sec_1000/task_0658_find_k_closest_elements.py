@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def findClosestElements(self, arr: list[int], k: int, x: int) -> list[int]:
+    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
         left = 0
         right = len(arr) - k
 

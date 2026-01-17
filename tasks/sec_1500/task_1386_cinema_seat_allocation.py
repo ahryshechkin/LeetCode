@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def maxNumberOfFamilies(self, n: int, reservedSeats: list[list[int]]) -> int:
+    def maxNumberOfFamilies(self, n: int, reservedSeats: list[List[int]]) -> int:
         leftGroup = [2, 3, 4, 5]
         middleGroup = [4, 5, 6, 7]
         rightGroup = [6, 7, 8, 9]

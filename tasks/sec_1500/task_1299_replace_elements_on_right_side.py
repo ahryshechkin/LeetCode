@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def replaceElements(self, arr: list[int]) -> list[int]:
+    def replaceElements(self, arr: List[int]) -> List[int]:
         result = list()
 
         posMax = 0

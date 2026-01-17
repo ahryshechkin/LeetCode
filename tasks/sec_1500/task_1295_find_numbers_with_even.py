@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def findNumbers(self, nums: list[int]) -> int:
+    def findNumbers(self, nums: List[int]) -> int:
         cnt = 0
 
         for num in nums:

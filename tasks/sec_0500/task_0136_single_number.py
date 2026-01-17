@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def singleNumber(self, nums: list[int]) -> int:
+    def singleNumber(self, nums: List[int]) -> int:
         uniqueValues = set()
 
         for num in nums:
